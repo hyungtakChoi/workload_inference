@@ -1,0 +1,6 @@
+torch>=2.0.0
+transformers>=4.38.0
+datasets>=2.10.0
+accelerate>=0.20.0
+peft
+scipy

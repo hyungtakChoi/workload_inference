@@ -1,0 +1,17 @@
+# 베이스 이미지 (CUDA 11.8 + PyTorch 설치됨)
+FROM pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime
+
+# 작업 디렉토리 설정
+WORKDIR /app
+
+# 파일 복사
+COPY . .
+
+# 패키지 설치
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 로그 디렉토리 생성
+RUN mkdir -p /logs
+
+# 실행 스크립트 (entrypoint.sh 실행)
+ENTRYPOINT ["bash", "run.sh"]
