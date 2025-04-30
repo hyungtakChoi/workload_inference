@@ -1,6 +1,7 @@
 
 # configs/config.py
 
-MODEL_NAME = "NousResearch/Llama-3-7B-Instruct"
-DATASET_NAME = "hellaswag"
+MODEL_NAME = "meta-llama/Llama-3.1-8B-Instruct"
+DATASET_NAME = "Rowan/hellaswag"
+SPLIT_TYPE = "test"
 CACHE_DIR = "./cache"
